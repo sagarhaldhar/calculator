@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <!-- wrapper -->
+    <section class="relative bg-gray-300 h-screen flex justify-center items-center">
+        <!-- calculator grid -->
+        <div class="grid grid-cols-4 grid-rows-5 w-1/2 h-1/2 gap-2">
+
+            <!-- display  -->
+            <div class="col-span-3  bg-white px-2 py-4 text-xl" id="display">0</div>
+
+            <!-- AC button  -->
+            <button onclick="clearDisplay()" class="bg-green-500 text-white">AC</button>
+
+            <!-- 1 row  -->
+            <button onclick="append('9')" class="bg-black text-white btn">9</button>
+            <button onclick="append('8')" class="bg-black text-white btn">8</button>
+            <button onclick="append('7')" class="bg-black text-white btn">7</button>
+            <button onclick="append('+')" class="bg-gray-500 text-white btn">+</button>
+
+            <!-- 2 row  -->
+            <button onclick="append('4')" class="bg-black text-white btn">4</button>
+            <button onclick="append('5')" class="bg-black text-white btn">5</button>
+            <button onclick="append('6')" class="bg-black text-white btn">6</button>
+            <button onclick="append('-')" class="bg-gray-500 text-white btn">-</button>
+
+            <!-- 3 row  -->
+            <button onclick="append('1')" class="bg-black text-white btn">1</button>
+            <button onclick="append('2')" class="bg-black text-white btn">2</button>
+            <button onclick="append('3')" class="bg-black text-white btn">3</button>
+            <button onclick="append('/')" class="bg-gray-500 text-white btn">/</button>
+
+            <!-- 4 row  -->
+            <button onclick="append('.')" class="bg-black text-white btn">.</button>
+            <button onclick="append('0')" class="bg-black text-white btn">0</button>
+            <button onclick="solve()" class="bg-black text-white btn">=</button>
+            <button onclick="append('*')" class="bg-gray-500 text-white btn">X</button>
+
+
+            
+
+        </div>
+
+        <script src="calculator.js"></script>
+    </section>
+</body>
+</html>
